@@ -776,7 +776,7 @@ export default class Browser extends React.Component<Props, State> {
       <Context.Provider value={contextValue}>
         {
           mounted &&
-          <Portals id="zmage" zIndex={zIndex} className={style.wrapperLayer} style={controllerLayoutStyle} target={portalTarget ?? undefined}>
+          <Portals id="zmage" zIndex={zIndex} className={style.wrapperLayer} style={controllerLayoutStyle} target={portalTarget}>
 
             {/*背景层*/}
             <Background {...statusValue}/>
